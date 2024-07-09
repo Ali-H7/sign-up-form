@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *,
 *::before,
 *::after {
@@ -13,6 +15,8 @@ html {
 body {
   box-sizing: border-box;
   font-size: 1.6rem;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 300;
 }
 
 @font-face {
@@ -56,6 +60,7 @@ img[src="images/odin.png"]{
     font-family: norse-bold;
     color: #fff;
     font-size: 10rem;
+    font-weight: 400;
 }
 
 .left-container p {
@@ -78,14 +83,86 @@ img[src="images/odin.png"]{
 
 .form-background {
     background-color: #fff;
-    height: 35%;
+    height: 33%;
+    padding-left: 5%;
+    padding-top: 2%;
+    color: #1f2531; 
+    margin-top: 5rem;
 }
 
 ul {
     display: flex;
     list-style: none;
+    gap: 9%;
 }
 
 label, input {
     display: block;
+    font-weight: bold;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+}
+
+input {
+    margin-top: 0.2rem;
+    margin-bottom: 2.5rem;
+    width: 35rem;
+    height: 3rem;
+    letter-spacing: normal;
+    border-radius: 0.4rem;
+    border: solid #E5E7EB 0.1rem;
+}
+
+.form-background p {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    margin-top: 4rem;
+    margin-left: 7rem;
+    margin-bottom: 3rem;
+    width: 23rem;
+    height: 5.5rem;
+    background-color: #007aa9;
+    border-radius: 0.7rem;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border: none;
+}
+
+button + div{
+    margin-left: 7rem;
+    font-size: 1.8rem;
+}
+
+div > span {
+    color: #007aa9;
+    font-weight: bold;
+}
+
+.right-container > p {
+    margin-left: 7rem;
+    font-size: 2.8rem;
+    max-width: 55ch;
+}
+
+.right-container p:nth-child(3){
+    margin-top: 3rem;
+}
+
+a:visited {
+    color:#fff;
+}
+
+input:focus{
+    outline: solid 0.1rem #007aa9;
+}
+
+input:user-invalid{
+    outline: solid 0.1rem red;
+}
+input:user-valid{
+    outline: solid 0.1rem green;
 }
